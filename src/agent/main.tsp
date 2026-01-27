@@ -9,16 +9,19 @@ using TypeSpec.M365.Copilot.Agents;
 
 @agent(
   "SupportTicketAgent",
-  "Declarative agent created with Microsoft 365 Agents Toolkit and TypeSpec for Microsoft 365 Copilot."
+  "サポートチケット管理を支援する Declarative Agent です。GitHub の Issue 検索や、組織のナレッジを活用して回答します。"
 )
 @instructions(Prompts.INSTRUCTIONS)
-// Uncomment this part to add a conversation starter to the agent.
-// This will be shown to the user when the agent is first created.
-// @conversationStarter(#{
-//   title: "Get latest issues",
-//   text: "Get the latest issues from GitHub" 
-// })
-namespace SupportTicketAgent {  
-  // Uncomment this part to include custom actions in the agent
-  // op searchIssues is global.GitHubAPI.searchIssues;
+// Conversation Starters: ユーザーにエージェントの使い方を示すヒント
+@conversationStarter(#{
+  title: "GitHub Issue を検索",
+  text: "M365 Agents Toolkit の最新の Issue を教えて"
+})
+@conversationStarter(#{
+  title: "オープンな Issue 一覧",
+  text: "現在オープンになっている Issue は何件ある？"
+})
+namespace SupportTicketAgent {
+  // GitHub API Plugin: Issue 検索機能を有効化
+  op searchIssues is global.GitHubAPI.searchIssues;
 }
