@@ -8,8 +8,8 @@ import "./env.tsp";
 using TypeSpec.M365.Copilot.Agents;
 
 @agent(
-  "SupportTicketAgent",
-  "サポートチケット管理を支援する Declarative Agent です。GitHub の Issue 検索や、組織のナレッジを活用して回答します。"
+  "GitHubIssueSearch",
+  "GitHub Issue を検索・表示する Declarative Agent です。M365 Agents Toolkit で構築されたサンプルです。"
 )
 @instructions(Prompts.INSTRUCTIONS)
 // Conversation Starters: ユーザーにエージェントの使い方を示すヒント
@@ -21,7 +21,7 @@ using TypeSpec.M365.Copilot.Agents;
   title: "オープンな Issue 一覧",
   text: "現在オープンになっている Issue は何件ある？"
 })
-namespace SupportTicketAgent {
+namespace GitHubIssueSearch {
   // GitHub API Plugin: Issue 検索機能を有効化
   op searchIssues is global.GitHubAPI.searchIssues;
 }

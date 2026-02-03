@@ -14,12 +14,12 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "SupportTicketAgent${{APP_NAME_SUFFIX}}",
-        "full": "Full name for SupportTicketAgent"
+        "short": "GitHubIssueSearch${{APP_NAME_SUFFIX}}",
+        "full": "GitHub Issue 検索エージェント"
     },
     "description": {
-        "short": "Short description for SupportTicketAgent",
-        "full": "Full description for SupportTicketAgent"
+        "short": "GitHub Issue を検索・表示する Copilot エージェント",
+        "full": "GitHub リポジトリの Issue を検索し、最新の問題やバグレポートを Copilot Chat で確認できます。M365 Agents Toolkit で構築された Declarative Agent のサンプルです。"
     },
     "accentColor": "#FFFFFF",
     "composeExtensions": [],
