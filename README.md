@@ -134,6 +134,16 @@ Select-String -Path "m365agents*.yml","appPackage/manifest.json","src/agent/main
 | [TypeSpec マッピング](docs/typespec-mapping.md) | .tsp と .json の対応関係 |
 | [Provision ワークフロー](docs/provision.md) | F5 実行時の処理フロー |
 | [Step 1](docs/step1.md) | GitHub Issue 検索エージェントの作成 |
+| [Step 2](docs/step2.md) | SharePoint + Teams Capabilities の追加 |
+
+## デバッグとトラブルシューティング
+
+### Developer Mode
+
+Copilot Chat で `-developer on` と入力すると、デバッグモードが有効になります。
+どの Capability や Action が使用されたかを確認できます。
+
+詳細: [Use developer mode in Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/debugging-agents-copilot-studio)
 
 ## フォルダ構成
 
