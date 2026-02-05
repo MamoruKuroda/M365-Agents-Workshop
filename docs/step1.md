@@ -7,11 +7,57 @@
 - API Plugin の基本設定
 - local 環境（F5）での動作確認
 
+## 前提条件
+
+このステップを開始する前に、以下が完了していることを確認してください：
+
+- [ ] Node.js 18/20/22 がインストールされている
+- [ ] VS Code がインストールされている
+- [ ] Microsoft 365 Agents Toolkit 拡張機能がインストールされている
+- [ ] Microsoft 365 Copilot ライセンスが割り当てられている
+
+---
+
+## 方法A: このリポジトリを使う（推奨）
+
+このリポジトリを clone した場合、プロジェクトは既にセットアップ済みです。  
+**「1.1 プロジェクトの確認」に進んでください。**
+
+```bash
+git clone https://github.com/MamoruKuroda/M365-Agents-Workshop.git
+cd M365-Agents-Workshop
+npm install
+```
+
+---
+
+## 方法B: ゼロから作成する場合
+
+### 0.1 M365 Agents Toolkit のインストール
+
+1. VS Code を開く
+2. 拡張機能パネル（Ctrl+Shift+X）を開く
+3. 「**Microsoft 365 Agents Toolkit**」を検索
+4. **インストール** をクリック
+
+### 0.2 新規プロジェクトの作成
+
+1. VS Code のサイドバーで **M365 Agents Toolkit アイコン** をクリック
+2. **Create a New Agent/App** をクリック
+3. **Declarative Agent** を選択
+4. **Start with TypeSpec for Microsoft 365 Copilot** を選択
+5. Application Name に `SupportTicketAgent` と入力
+6. フォルダを選択して作成
+
+> ⚠️ このテンプレートには GitHub Issue 検索の API Plugin が既に含まれています。
+
+---
+
 ## 手順
 
 ### 1.1 プロジェクトの確認
 
-プロジェクト作成後、以下のフォルダ構成を確認します：
+プロジェクト（clone または作成後）のフォルダ構成を確認します：
 
 ```
 SupportTicketAgent/
