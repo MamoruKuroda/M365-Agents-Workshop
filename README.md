@@ -36,6 +36,33 @@ Microsoft 365 Copilot の Declarative Agent を TypeSpec と M365 Agents Toolkit
 | **カスタムアプリのアップロード** | Teams 管理センター > Teams アプリ > セットアップポリシー | 有効 |
 | **Copilot アクセス** | Microsoft 365 管理センター | ライセンス割り当て済み |
 
+## クイックスタート
+
+### 1. リポジトリをクローン
+
+```bash
+git clone https://github.com/MamoruKuroda/M365-Agents-Workshop.git
+cd M365-Agents-Workshop
+```
+
+### 2. 依存関係のインストール
+
+```bash
+npm install
+```
+
+### 3. ステップに沿って進める
+
+| Step | ドキュメント | 内容 |
+|------|-------------|------|
+| 1 | [Step 1: GitHub Issue 検索](docs/step1.md) | API Plugin の有効化と動作確認 |
+| 2 | [Step 2: SharePoint + Teams](docs/step2.md) | M365 データを Knowledge として追加 |
+| 3 | [Step 3: Email・People・WebSearch](docs/step3.md) | 知識ソースの拡張と優先順位制御 |
+
+> 💡 **ヒント**: 各 Step の解答は対応するブランチ（`step-1-*`, `step-2-*`）で確認できます。
+>
+> 困ったときは `git checkout step-1-activate-github-action` などで解答を確認してください。
+
 ## 開発環境の基礎知識
 
 ### local 環境と dev 環境の違い
@@ -117,24 +144,21 @@ Select-String -Path "m365agents*.yml","appPackage/manifest.json","src/agent/main
 ```
 
 ## ステップ一覧
-リポジトリは以下の Step に沿って実装を進めます。
-| Step | ブランチ | 内容 | 学習目標 |
-|------|---------|------|---------|
-| main | `main` | Toolkit テンプレート | プロジェクト構造の理解 |
-| 1 | `step-1-activate-github-action` | GitHub Action 有効化 + ConversationStarter | API Plugin の動作確認 |
-| 2 | `step-2-add-capabilities` | SharePoint + Teams | M365 データ連携 |
-| 3 | `step-3-extend-knowledge` | Email, People, WebSearch | 知識ソースの拡張 |
-| 4 | `step-4-full-features` | 全機能 | 実運用レベルの構成 |
 
-## ドキュメント
+| Step | ドキュメント | ブランチ（解答） | 学習目標 |
+|------|-------------|-----------------|----------|
+| 1 | [Step 1](docs/step1.md) | `step-1-activate-github-action` | API Plugin の動作確認 |
+| 2 | [Step 2](docs/step2.md) | `step-2-add-capabilities` | M365 データ連携（SharePoint, Teams） |
+| 3 | [Step 3](docs/step3.md) | `step-3-extend-knowledge` | 知識ソースの拡張（Email, People, WebSearch） |
+| 4 | Step 4（準備中） | `step-4-full-features` | 実運用レベルの構成 |
+
+## 参考ドキュメント
 
 | ドキュメント | 内容 |
 |-------------|------|
 | [アーキテクチャ概要](docs/architecture.md) | 技術スタック、なぜ TypeSpec を使うのか |
 | [TypeSpec マッピング](docs/typespec-mapping.md) | .tsp と .json の対応関係 |
 | [Provision ワークフロー](docs/provision.md) | F5 実行時の処理フロー |
-| [Step 1](docs/step1.md) | GitHub Issue 検索エージェントの作成 |
-| [Step 2](docs/step2.md) | SharePoint + Teams Capabilities の追加 |
 
 ## デバッグとトラブルシューティング
 
