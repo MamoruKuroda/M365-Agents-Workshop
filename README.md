@@ -57,6 +57,7 @@ npm install
 |------|-------------|------|
 | 1 | [Step 1: GitHub Issue 検索](docs/step1.md) | API Plugin の有効化と動作確認 |
 | 2 | [Step 2: SharePoint + Teams](docs/step2.md) | M365 データを Knowledge として追加 |
+| 3 | [Step 3: Email・People・WebSearch](docs/step3.md) | 知識ソースの拡張と優先順位制御 |
 
 > 💡 **ヒント**: 各 Step の解答は対応するブランチ（`step-1-*`, `step-2-*`）で確認できます。
 >
@@ -148,7 +149,7 @@ Select-String -Path "m365agents*.yml","appPackage/manifest.json","src/agent/main
 |------|-------------|-----------------|----------|
 | 1 | [Step 1](docs/step1.md) | `step-1-activate-github-action` | API Plugin の動作確認 |
 | 2 | [Step 2](docs/step2.md) | `step-2-add-capabilities` | M365 データ連携（SharePoint, Teams） |
-| 3 | Step 3（準備中） | `step-3-extend-knowledge` | 知識ソースの拡張（Email, People, WebSearch） |
+| 3 | [Step 3](docs/step3.md) | `step-3-extend-knowledge` | 知識ソースの拡張（Email, People, WebSearch） |
 | 4 | Step 4（準備中） | `step-4-full-features` | 実運用レベルの構成 |
 
 ## 参考ドキュメント
