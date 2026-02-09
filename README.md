@@ -150,7 +150,6 @@ Select-String -Path "m365agents*.yml","appPackage/manifest.json","src/agent/main
 | 1 | [Step 1](docs/step1.md) | `step-1-activate-github-action` | API Plugin の動作確認 |
 | 2 | [Step 2](docs/step2.md) | `step-2-add-capabilities` | M365 データ連携（SharePoint, Teams） |
 | 3 | [Step 3](docs/step3.md) | `step-3-extend-knowledge` | 知識ソースの拡張（Email, People, WebSearch） |
-| 4 | Step 4（準備中） | `step-4-full-features` | 実運用レベルの構成 |
 
 ## 参考ドキュメント
 
