@@ -124,7 +124,6 @@ Select-String -Path "m365agents*.yml","appPackage/manifest.json","src/agent/main
 | 1 | `step-1-activate-github-action` | GitHub Action 有効化 + ConversationStarter | API Plugin の動作確認 |
 | 2 | `step-2-add-capabilities` | SharePoint + Teams | M365 データ連携 |
 | 3 | `step-3-extend-knowledge` | Email, People, WebSearch | 知識ソースの拡張 |
-| 4 | `step-4-full-features` | 全機能 | 実運用レベルの構成 |
 
 ## ドキュメント
 
