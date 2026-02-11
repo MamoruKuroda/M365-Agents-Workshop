@@ -1,6 +1,8 @@
-# M365 Agents Workshop
+# M365 Declarative Agent Workshop
 
-Microsoft 365 Copilot の Declarative Agent を TypeSpec と M365 Agents Toolkit で構築するハンズオンワークショップです。
+Microsoft 365 Copilot の **Declarative Agent（宣言型エージェント）** を TypeSpec と M365 Agents Toolkit で構築するハンズオンワークショップです。
+
+> 🔗 **Custom Engine Agent を学ぶ場合**: [M365-CustomEngineAgent-Workshop](https://github.com/MamoruKuroda/M365-CustomEngineAgent-Workshop) を参照してください。
 
 ## 概要
 
@@ -35,6 +37,33 @@ Microsoft 365 Copilot の Declarative Agent を TypeSpec と M365 Agents Toolkit
 |------|---------|-----------|
 | **カスタムアプリのアップロード** | Teams 管理センター > Teams アプリ > セットアップポリシー | 有効 |
 | **Copilot アクセス** | Microsoft 365 管理センター | ライセンス割り当て済み |
+
+## クイックスタート
+
+### 1. リポジトリをクローン
+
+```bash
+git clone https://github.com/MamoruKuroda/M365-DeclarativeAgent-Workshop.git
+cd M365-DeclarativeAgent-Workshop
+```
+
+### 2. 依存関係のインストール
+
+```bash
+npm install
+```
+
+### 3. ステップに沿って進める
+
+| Step | ドキュメント | 内容 |
+|------|-------------|------|
+| 1 | [Step 1: GitHub Issue 検索](docs/step1.md) | API Plugin の有効化と動作確認 |
+| 2 | [Step 2: SharePoint + Teams](docs/step2.md) | M365 データを Knowledge として追加 |
+| 3 | [Step 3: Email・People・WebSearch](docs/step3.md) | 知識ソースの拡張と優先順位制御 |
+
+> 💡 **ヒント**: 各 Step の解答は対応するブランチ（`step-1-*`, `step-2-*`）で確認できます。
+>
+> 困ったときは `git checkout step-1-activate-github-action` などで解答を確認してください。
 
 ## 開発環境の基礎知識
 
@@ -117,23 +146,20 @@ Select-String -Path "m365agents*.yml","appPackage/manifest.json","src/agent/main
 ```
 
 ## ステップ一覧
-リポジトリは以下の Step に沿って実装を進めます。
-| Step | ブランチ | 内容 | 学習目標 |
-|------|---------|------|---------|
-| main | `main` | Toolkit テンプレート | プロジェクト構造の理解 |
-| 1 | `step-1-activate-github-action` | GitHub Action 有効化 + ConversationStarter | API Plugin の動作確認 |
-| 2 | `step-2-add-capabilities` | SharePoint + Teams | M365 データ連携 |
-| 3 | `step-3-extend-knowledge` | Email, People, WebSearch | 知識ソースの拡張 |
 
-## ドキュメント
+| Step | ドキュメント | ブランチ（解答） | 学習目標 |
+|------|-------------|-----------------|----------|
+| 1 | [Step 1](docs/step1.md) | `step-1-activate-github-action` | API Plugin の動作確認 |
+| 2 | [Step 2](docs/step2.md) | `step-2-add-capabilities` | M365 データ連携（SharePoint, Teams） |
+| 3 | [Step 3](docs/step3.md) | `step-3-extend-knowledge` | 知識ソースの拡張（Email, People, WebSearch） |
+
+## 参考ドキュメント
 
 | ドキュメント | 内容 |
 |-------------|------|
 | [アーキテクチャ概要](docs/architecture.md) | 技術スタック、なぜ TypeSpec を使うのか |
 | [TypeSpec マッピング](docs/typespec-mapping.md) | .tsp と .json の対応関係 |
 | [Provision ワークフロー](docs/provision.md) | F5 実行時の処理フロー |
-| [Step 1](docs/step1.md) | GitHub Issue 検索エージェントの作成 |
-| [Step 2](docs/step2.md) | SharePoint + Teams Capabilities の追加 |
 
 ## デバッグとトラブルシューティング
 
@@ -167,3 +193,17 @@ Copilot Chat で `-developer on` と入力すると、デバッグモードが�
 ### ツール
 - [Microsoft 365 Agents Toolkit](https://aka.ms/M365AgentsToolkit)
 - [TypeSpec](https://typespec.io/)
+
+## 学習パス
+
+本ワークショップは M365 エージェント開発の学習パスの一部です。
+
+| ワークショップ | エージェント種別 | 技術スタック | シナリオ |
+|---|---|---|---|
+| **本リポジトリ** | Declarative Agent | TypeSpec / Node.js | GitHub Issue 検索 |
+| [CE Workshop](https://github.com/MamoruKuroda/M365-CustomEngineAgent-Workshop) | Custom Engine Agent | C# / .NET / Agent Framework | IT ヘルプデスク |
+
+### どちらを選ぶべきか？
+
+- **M365 データ活用が中心** → Declarative Agent（本リポジトリ）
+- **外部 DB 連携・独自ロジック** → [Custom Engine Agent](https://github.com/MamoruKuroda/M365-CustomEngineAgent-Workshop)
