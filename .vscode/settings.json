@@ -16,6 +16,14 @@
         "/^cd \"C:\\\\Users\\\\makur\\\\OneDrive - Microsoft\\\\GPS\\\\VSCode\\\\SupportTicketAgent\"; \\$content = Get-Content \"env\\\\\\.env\\.local\" -Raw; \\$content = \\$content -replace 'TEAMS_APP_ID=\\.\\*', 'TEAMS_APP_ID='; \\$content = \\$content -replace 'M365_TITLE_ID=\\.\\*', 'M365_TITLE_ID='; \\$content = \\$content -replace 'M365_APP_ID=\\.\\*', 'M365_APP_ID='; \\$content = \\$content -replace 'APP_NAME_SUFFIX=\\.\\*', 'APP_NAME_SUFFIX=-v1'; \\$content \\| Set-Content \"env\\\\\\.env\\.local\" -NoNewline; Write-Host \"=== 修正完了 ===\"; Get-Content \"env\\\\\\.env\\.local\"$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^cd \"C:\\\\Users\\\\makur\\\\OneDrive - Microsoft\\\\GPS\\\\VSCode\\\\SupportTicketAgent\"; gh repo rename M365-DeclarativeAgent-Workshop --repo MamoruKuroda/M365-Agents-Workshop --yes 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd \"C:\\\\Users\\\\makur\\\\OneDrive - Microsoft\\\\GPS\\\\VSCode\\\\SupportTicketAgent\"; git remote set-url origin https://github\\.com/MamoruKuroda/M365-DeclarativeAgent-Workshop\\.git; git remote -v$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }
