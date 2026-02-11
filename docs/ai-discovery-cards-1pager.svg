@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1b2d"/>
+      <stop offset="100%" stop-color="#1a2940"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0078D4"/>
+      <stop offset="25%" stop-color="#50E6FF"/>
+      <stop offset="50%" stop-color="#9B59B6"/>
+      <stop offset="75%" stop-color="#D83B01"/>
+      <stop offset="100%" stop-color="#107C10"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1920" height="6" fill="url(#accentBar)"/>
+
+  <!-- ======== HEADER ======== -->
+  <g transform="translate(50, 30)">
+    <rect x="0" y="0" width="16" height="16" fill="#F25022"/>
+    <rect x="18" y="0" width="16" height="16" fill="#7FBA00"/>
+    <rect x="0" y="18" width="16" height="16" fill="#00A4EF"/>
+    <rect x="18" y="18" width="16" height="16" fill="#FFB900"/>
+    <text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#ffffff" font-weight="600">Microsoft</text>
+  </g>
+
+  <!-- Headline: 46→56 -->
+  <text x="50" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="56" fill="#ffffff" font-weight="700" letter-spacing="-0.5">AI Discovery Cards Workshop</text>
+
+  <!-- Sub-headline: 22→32 -->
+  <text x="50" y="158" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#50E6FF" font-weight="600">Microsoft AI Discovery Cards で、次の一手をつくる。</text>
+
+  <line x1="50" y1="172" x2="860" y2="172" stroke="#0078D4" stroke-width="2" opacity="0.6"/>
+
+  <!-- ======== LEAD TEXT: 16→24 ======== -->
+  <text x="50" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#c8d6e5">
+    <tspan x="50" dy="0">Microsoft AI Discovery Cards は、創造的でインタラクティブな手法で、</tspan>
+    <tspan x="50" dy="32">自社の戦略的なAI活用を検討するためのツールです。価値の高いシナリオの特定、</tspan>
+    <tspan x="50" dy="32">関係者の合意形成、事業インパクトにつながる機会の発見を、専門知識がなくても進められます。</tspan>
+  </text>
+
+  <!-- ======== PROBLEM STATEMENT ======== -->
+  <rect x="50" y="296" width="900" height="72" rx="8" fill="#1e3a5f" opacity="0.7"/>
+  <text x="72" y="324" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#FFB900" font-weight="600">💡 課題</text>
+  <text x="72" y="354" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#c8d6e5">
+    <tspan x="72" dy="0">多くの企業がAIの可能性を解き放ちたい一方で、どのユースケースに注力すべきか／</tspan>
+  </text>
+
+  <!-- ======== COLUMN 1: 参加して得られる成果 ======== -->
+  <rect x="50" y="390" width="550" height="300" rx="10" fill="#162944" stroke="#0078D4" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="50" y="390" width="550" height="48" rx="10" fill="#0078D4"/>
+  <rect x="50" y="418" width="550" height="20" fill="#0078D4"/>
+  <text x="74" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff" font-weight="700">✦  参加して得られる成果</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#e0e8f0">
+    <text x="80" y="476">
+      <tspan font-size="24" fill="#50E6FF">✓</tspan>
+      <tspan dx="8" font-size="22" font-weight="600" fill="#ffffff">ステークホルダー間の合意形成が速い</tspan>
+    </text>
+    <text x="118" y="502" font-size="19" fill="#99aabb">経営レベルの意思決定を1セッションで加速</text>
+
+    <text x="80" y="542">
+      <tspan font-size="24" fill="#50E6FF">✓</tspan>
+      <tspan dx="8" font-size="22" font-weight="600" fill="#ffffff">成果・ROIに直結する実行可能なユースケース</tspan>
+    </text>
+    <text x="118" y="568" font-size="19" fill="#99aabb">抽象的な検討ではなく、明確で測定可能な計画へ</text>
+
+    <text x="80" y="608">
+      <tspan font-size="24" fill="#50E6FF">✓</tspan>
+      <tspan dx="8" font-size="22" font-weight="600" fill="#ffffff">探索から実行へつながるロードマップ</tspan>
+    </text>
+    <text x="118" y="634" font-size="19" fill="#99aabb">アクションプランと中期計画を明確化</text>
+  </g>
+
+  <!-- ======== COLUMN 2: 当日の流れ ======== -->
+  <rect x="630" y="390" width="600" height="300" rx="10" fill="#162944" stroke="#9B59B6" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="630" y="390" width="600" height="48" rx="10" fill="#7B2D8E"/>
+  <rect x="630" y="418" width="600" height="20" fill="#7B2D8E"/>
+  <text x="654" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff" font-weight="700">▶  当日の流れ（2–4時間）</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#e0e8f0">
+    <circle cx="670" cy="478" r="20" fill="#9B59B6"/>
+    <text x="670" y="485" font-size="20" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+    <text x="702" y="475" font-size="22" font-weight="600" fill="#ffffff">現状・目標・KPIの共有</text>
+    <text x="702" y="500" font-size="19" fill="#99aabb">主要業務とKPIを整理し、共通認識をつくる</text>
+
+    <circle cx="670" cy="546" r="20" fill="#9B59B6"/>
+    <text x="670" y="553" font-size="20" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+    <text x="702" y="543" font-size="22" font-weight="600" fill="#ffffff">AI Discovery Cards でアイデア発散</text>
+    <text x="702" y="568" font-size="19" fill="#99aabb">カードを使い、AI活用の可能性を幅広く探索</text>
+
+    <circle cx="670" cy="618" r="20" fill="#9B59B6"/>
+    <text x="670" y="625" font-size="20" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+    <text x="702" y="610" font-size="22" font-weight="600" fill="#ffffff">実現性×事業インパクトで評価・優先度決定</text>
+    <text x="702" y="636" font-size="19" fill="#99aabb">収益貢献・顧客価値・リスク低減・実装容易性で</text>
+    <text x="702" y="658" font-size="19" fill="#99aabb">優先順位とアクションを確定</text>
+  </g>
+
+  <!-- ======== RIGHT: 経営にもたらす価値 ======== -->
+  <rect x="1270" y="30" width="620" height="270" rx="10" fill="#162944" stroke="#107C10" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="1270" y="30" width="620" height="50" rx="10" fill="#107C10"/>
+  <rect x="1270" y="58" width="620" height="22" fill="#107C10"/>
+  <text x="1296" y="64" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff" font-weight="700">🎯 経営にもたらす価値</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#e0e8f0">
+    <text x="1300" y="118">
+      <tspan font-size="22" fill="#7FBA00">●</tspan>
+      <tspan dx="6" font-size="22" font-weight="600" fill="#ffffff">短時間で全社AI方針の合意形成ができる</tspan>
+    </text>
+    <text x="1334" y="144" font-size="19" fill="#99aabb">経営と現場が同じテーブルで優先順位を決定</text>
+
+    <text x="1300" y="182">
+      <tspan font-size="22" fill="#7FBA00">●</tspan>
+      <tspan dx="6" font-size="22" font-weight="600" fill="#ffffff">"探索止まり"にならず、実行計画まで到達</tspan>
+    </text>
+    <text x="1334" y="208" font-size="19" fill="#99aabb">抽象的な議論で終わらせず、次の一手を明確に</text>
+
+    <text x="1300" y="246">
+      <tspan font-size="22" fill="#7FBA00">●</tspan>
+      <tspan dx="6" font-size="22" font-weight="600" fill="#ffffff">現場の知見と経営判断を同時に反映できる</tspan>
+    </text>
+    <text x="1334" y="272" font-size="19" fill="#99aabb">部門横断の視点で実効性の高い意思決定を実現</text>
+  </g>
+
+  <!-- ======== RIGHT: 成果物 ======== -->
+  <rect x="1270" y="320" width="620" height="370" rx="10" fill="#162944" stroke="#D83B01" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="1270" y="320" width="620" height="50" rx="10" fill="#D83B01"/>
+  <rect x="1270" y="348" width="620" height="22" fill="#D83B01"/>
+  <text x="1296" y="354" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff" font-weight="700">📋 成果物（Deliverables）</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#e0e8f0">
+    <rect x="1300" y="390" width="560" height="60" rx="6" fill="#2a1a0e" opacity="0.6"/>
+    <text x="1320" y="416" font-size="21" font-weight="600" fill="#FFB900">① 優先度付きユースケース一覧</text>
+    <text x="1320" y="440" font-size="17" fill="#99aabb">事業インパクト × 実現性でランク付け</text>
+
+    <rect x="1300" y="460" width="560" height="60" rx="6" fill="#2a1a0e" opacity="0.6"/>
+    <text x="1320" y="486" font-size="21" font-weight="600" fill="#FFB900">② 概算効果・難易度マトリクス</text>
+    <text x="1320" y="510" font-size="17" fill="#99aabb">各ユースケースの期待効果と実装難易度を可視化</text>
+
+    <rect x="1300" y="530" width="560" height="60" rx="6" fill="#2a1a0e" opacity="0.6"/>
+    <text x="1320" y="556" font-size="21" font-weight="600" fill="#FFB900">③ 担当・オーナー割当</text>
+    <text x="1320" y="580" font-size="17" fill="#99aabb">責任者を明確にし、実行体制を即座に確立</text>
+
+    <rect x="1300" y="600" width="560" height="68" rx="6" fill="#2a1a0e" opacity="0.6"/>
+    <text x="1320" y="628" font-size="21" font-weight="600" fill="#FFB900">④ アクションプランとロードマップのひな型</text>
+    <text x="1320" y="654" font-size="17" fill="#99aabb">直近アクションから中期計画までの道筋をドラフト</text>
+  </g>
+
+  <!-- ======== BOTTOM SECTION ======== -->
+  <rect x="0" y="720" width="1920" height="360" fill="#0d1926"/>
+  <line x1="50" y1="730" x2="1870" y2="730" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+
+  <!-- 対象・形式 (上段・全幅) -->
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="70" y="770" font-size="24" fill="#50E6FF" font-weight="700">📌 対象・形式</text>
+
+    <text x="70" y="806" font-size="21" fill="#c8d6e5">
+      <tspan font-weight="600" fill="#ffffff">対象：</tspan>
+      <tspan>経営層（CEO / CTO / 事業責任者）＋ 現場キーパーソン（営業・開発・マーケティングなど）</tspan>
+    </text>
+    <text x="70" y="838" font-size="21" fill="#c8d6e5">
+      <tspan font-weight="600" fill="#ffffff">所要時間：</tspan>
+      <tspan>2–4時間</tspan>
+      <tspan dx="40" font-weight="600" fill="#ffffff">形式：</tspan>
+      <tspan>対面</tspan>
+    </text>
+    <text x="70" y="868" font-size="19" fill="#99aabb" font-style="italic">※ 経営判断と現場の知見を同時に集め、その場で優先順位を決めるワークショップです</text>
+  </g>
+
+  <!-- 後続メニュー (下段・全幅) -->
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="70" y="920" font-size="24" fill="#50E6FF" font-weight="700">🔄 後続メニュー</text>
+
+    <rect x="70" y="942" width="210" height="46" rx="23" fill="#0078D4"/>
+    <text x="175" y="971" font-size="18" fill="#fff" text-anchor="middle" font-weight="600">Discovery Workshop</text>
+
+    <text x="298" y="971" font-size="26" fill="#50E6FF">→</text>
+
+    <rect x="330" y="942" width="210" height="46" rx="23" fill="#7B2D8E"/>
+    <text x="435" y="971" font-size="18" fill="#fff" text-anchor="middle" font-weight="600">Agentic AI 構想整理</text>
+
+    <text x="558" y="971" font-size="26" fill="#50E6FF">→</text>
+
+    <rect x="590" y="942" width="160" height="46" rx="23" fill="#D83B01"/>
+    <text x="670" y="971" font-size="18" fill="#fff" text-anchor="middle" font-weight="600">PoC 計画</text>
+
+    <text x="768" y="971" font-size="26" fill="#50E6FF">→</text>
+
+    <rect x="800" y="942" width="140" height="46" rx="23" fill="#107C10"/>
+    <text x="870" y="971" font-size="18" fill="#fff" text-anchor="middle" font-weight="600">実装</text>
+
+    <text x="970" y="971" font-size="19" fill="#99aabb">ワークショップ後、PoC から実装まで継続的に進められます</text>
+  </g>
+
+  <!-- 責任あるAI -->
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="50" y="1010" width="1820" height="42" rx="6" fill="#1a2940" stroke="#0078D4" stroke-width="1" opacity="0.5"/>
+    <text x="72" y="1037" font-size="20" fill="#99aabb">
+      <tspan fill="#50E6FF" font-weight="600">🛡️ 責任あるAI：</tspan>
+      <tspan>Microsoftの設計原則に基づき、責任あるAIとセキュリティ・ガバナンスを前提に設計します。</tspan>
+    </text>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="1074" width="1920" height="6" fill="url(#accentBar)"/>
+
+  <!-- Copyright -->
+  <text x="960" y="1066" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#556677" text-anchor="middle">© Microsoft Corporation. All rights reserved.</text>
+
+</svg>
