@@ -1,6 +1,8 @@
-# M365 Agents Workshop
+# M365 Declarative Agent Workshop
 
-Microsoft 365 Copilot の Declarative Agent を TypeSpec と M365 Agents Toolkit で構築するハンズオンワークショップです。
+Microsoft 365 Copilot の **Declarative Agent（宣言型エージェント）** を TypeSpec と M365 Agents Toolkit で構築するハンズオンワークショップです。
+
+> 🔗 **Custom Engine Agent を学ぶ場合**: [M365-CustomEngineAgent-Workshop](https://github.com/MamoruKuroda/M365-CustomEngineAgent-Workshop) を参照してください。
 
 ## 概要
 
@@ -41,8 +43,8 @@ Microsoft 365 Copilot の Declarative Agent を TypeSpec と M365 Agents Toolkit
 ### 1. リポジトリをクローン
 
 ```bash
-git clone https://github.com/MamoruKuroda/M365-Agents-Workshop.git
-cd M365-Agents-Workshop
+git clone https://github.com/MamoruKuroda/M365-DeclarativeAgent-Workshop.git
+cd M365-DeclarativeAgent-Workshop
 ```
 
 ### 2. 依存関係のインストール
@@ -191,3 +193,17 @@ Copilot Chat で `-developer on` と入力すると、デバッグモードが�
 ### ツール
 - [Microsoft 365 Agents Toolkit](https://aka.ms/M365AgentsToolkit)
 - [TypeSpec](https://typespec.io/)
+
+## 学習パス
+
+本ワークショップは M365 エージェント開発の学習パスの一部です。
+
+| ワークショップ | エージェント種別 | 技術スタック | シナリオ |
+|---|---|---|---|
+| **本リポジトリ** | Declarative Agent | TypeSpec / Node.js | GitHub Issue 検索 |
+| [CE Workshop](https://github.com/MamoruKuroda/M365-CustomEngineAgent-Workshop) | Custom Engine Agent | C# / .NET / Agent Framework | IT ヘルプデスク |
+
+### どちらを選ぶべきか？
+
+- **M365 データ活用が中心** → Declarative Agent（本リポジトリ）
+- **外部 DB 連携・独自ロジック** → [Custom Engine Agent](https://github.com/MamoruKuroda/M365-CustomEngineAgent-Workshop)
